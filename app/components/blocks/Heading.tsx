@@ -1,9 +1,9 @@
 import {ReactNode} from "react";
+import Title from "@/app/components/ui/Title";
 
-type TitleProps = {
-  children: ReactNode;
-  variant?: 'black' | 'green' | 'white'
-  subtitle?: string;
+type HeadingProps = {
+  title: string;
+  subtitle: string;
 }
 
 const variantClasses = {
@@ -13,11 +13,11 @@ const variantClasses = {
 }
 
 
-export default function Heading({children, variant='green', subtitle}: TitleProps) {
+export default function Heading({title, subtitle}: HeadingProps) {
   return (
     <div className='flex gap-[40px] items-center'>
-
-      <p className='max-w-[580px] text-(length:--text-size-p)'>{subtitle}</p>
+      <Title>{title}</Title>
+      <p className='max-w-[580px] text-p'>{subtitle}</p>
     </div>
 
   )
