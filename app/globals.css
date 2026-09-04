@@ -12,6 +12,7 @@
   --color-primary: #191A23;
   --color-bright: #F3F3F3;
   --color-accent: #B9FF66;
+  --color-white: #FFFFFF;
 
   --font-size-p: 18px;
   --font-size-button: 20px;
@@ -72,3 +73,4 @@
   font-size: var(--font-size-button);
   line-height: 28px;
 }
+
