@@ -2,6 +2,7 @@ import {ReactNode} from "react";
 
 type TitleProps = {
   children: ReactNode;
+  className?: string;
   variant?: 'black' | 'green' | 'white'
 }
 
@@ -12,8 +13,8 @@ const variantClasses = {
 }
 
 
-export default function Title({children, variant='green'}: TitleProps) {
+export default function Title({children, variant='green', className='text-h2'}: TitleProps) {
   return (
-    <h2 className={`text-h2 px-[7px] rounded-[7px] ${variantClasses[variant]}`}>{children}</h2>
+    <h2 className={`px-[7px] rounded-[7px] ${variantClasses[variant]} ${className}`}>{children}</h2>
   )
 }
