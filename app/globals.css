@@ -38,3 +38,37 @@
   margin-top: 140px;
 
 }
+
+.text-p {
+  font-size: var(--font-size-p);
+  line-height: 23px;
+}
+
+.text-h1 {
+  font-size: var(--font-size-h1);
+  line-height: 76px;
+  font-weight: 500;
+}
+
+.text-h2 {
+  font-size: var(--font-size-h2);
+  line-height: 51px;
+  font-weight: 500;
+}
+
+.text-h3 {
+  font-size: var(--font-size-h3);
+  line-height: 38px;
+  font-weight: 500;
+}
+
+.text-h4 {
+  font-size: var(--font-size-h4);
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.text-button {
+  font-size: var(--font-size-button);
+  line-height: 28px;
+}
