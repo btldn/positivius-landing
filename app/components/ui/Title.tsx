@@ -15,6 +15,9 @@ const variantClasses = {
 
 export default function Title({children, variant='green', className='text-h2'}: TitleProps) {
   return (
-    <h2 className={`px-[7px] rounded-[7px] ${variantClasses[variant]} ${className}`}>{children}</h2>
+    <div className='max-w-[221px]'>
+      <h2 className={`inline box-decoration-clone px-[7px] rounded-[7px] ${variantClasses[variant]} ${className}`}>{children}</h2>
+    </div>
+
   )
 }

@@ -81,7 +81,7 @@ export default function ServicesSection () {
         {serviceCardsContent.map((card) => (
           <Card key='card' variant={card.bg} className='max-w-[600px] min-h-[310px] flex justify-between'>
             <div className='flex flex-col justify-between'>
-              <Title className='text-h3 max-w-[221px] text-black' variant={card.titleColor}>{card.title}</Title>
+              <Title className='text-h3 text-black' variant={card.titleColor}>{card.title}</Title>
               <LinkIcon arrow={card.arrowColor} bg={card.bgLink} />
             </div>
 
