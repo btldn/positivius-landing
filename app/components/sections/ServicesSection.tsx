@@ -1,5 +1,5 @@
 import Heading from "@/app/components/blocks/Heading";
-import Image from 'next/image'
+import Image, {StaticImageData} from 'next/image'
 import Card from "@/app/components/ui/Card";
 import LinkIcon from "@/app/components/ui/LinkIcon";
 import cardMarketing from './images/card-marketing.png'
@@ -16,7 +16,7 @@ type CardContent = {
   bg: 'black' | 'green' | 'gray';
   bgLink: 'white' | 'black';
   arrowColor: 'black' | 'green';
-  image: string;
+  image: StaticImageData;
 }
 
 const serviceCardsContent: CardContent[] = [
