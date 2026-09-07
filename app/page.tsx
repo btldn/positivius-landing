@@ -2,6 +2,7 @@ import Header from './components/sections/Header'
 import HeroSection from "@/app/components/sections/HeroSection";
 import ServicesSection from "@/app/components/sections/ServicesSection";
 import Proposal from "@/app/components/sections/Proposal";
+import Cases from "@/app/components/sections/Cases";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <Proposal />
+      <Cases />
     </>
   );
 }
