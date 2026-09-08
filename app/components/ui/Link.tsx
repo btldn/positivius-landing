@@ -1,5 +1,5 @@
 type IconProps = {
-  children: React.ReactNode
+  children?: React.ReactNode
   arrow: 'white' | 'green' | 'black'
   bg?: 'white' | 'green' | 'black';
 }
@@ -11,7 +11,7 @@ const color = {
 }
 
 
-export default function LinkIcon({ arrow, bg, children='Label' }: IconProps) {
+export default function Link({ arrow, bg, children='Label' }: IconProps) {
   return (
     <div className={`flex gap-[15px] items-center ${bg ? '' : ''}`}>
       <svg className={`${bg ? '' : 'order-2'}`} width={`${bg ? 41 : 21}`} height={`${bg ? 41 : 20}`} viewBox={bg ? "0 0 41 41" : "10 10 21 20"} fill="none" xmlns="http://www.w3.org/2000/svg">

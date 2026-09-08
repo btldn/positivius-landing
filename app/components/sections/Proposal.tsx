@@ -3,7 +3,6 @@ import Button from "@/app/components/ui/Button";
 import Image from "next/image";
 import cardProposal from './images/card-proposal.svg'
 
-
 export default function Proposal() {
   return (
     <div className="section-wrapper">

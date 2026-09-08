@@ -8,7 +8,7 @@ import notionLogo from './images/notion-logo.svg'
 import netflixLogo from './images/netflix-logo.svg'
 import zoomLogo from './images/zoom-logo.svg'
 
-export default function HeroSection () {
+export default function Hero () {
   return (
     <div className="!mt-[70px] section-wrapper">
       <div className="flex justify-between">

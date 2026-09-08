@@ -1,6 +1,6 @@
 import Header from './components/sections/Header'
-import HeroSection from "@/app/components/sections/HeroSection";
-import ServicesSection from "@/app/components/sections/ServicesSection";
+import Hero from "@/app/components/sections/Hero";
+import Services from "@/app/components/sections/Services";
 import Proposal from "@/app/components/sections/Proposal";
 import Cases from "@/app/components/sections/Cases";
 
@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <HeroSection />
-      <ServicesSection />
+      <Hero />
+      <Services />
       <Proposal />
       <Cases />
     </>

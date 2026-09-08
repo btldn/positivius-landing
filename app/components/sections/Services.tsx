@@ -1,7 +1,7 @@
 import Heading from "@/app/components/blocks/Heading";
 import Image, {StaticImageData} from 'next/image'
 import Card from "@/app/components/ui/Card";
-import LinkIcon from "@/app/components/ui/LinkIcon";
+import Link from "@/app/components/ui/Link";
 import cardMarketing from './images/card-marketing.png'
 import cardSearch from './images/card-search.png'
 import cardContent from './images/card-content.png'
@@ -70,7 +70,7 @@ const serviceCardsContent: CardContent[] = [
   }
 ]
 
-export default function ServicesSection () {
+export default function Services () {
   return (
     <div className='section-wrapper'>
       <Heading
@@ -78,11 +78,13 @@ export default function ServicesSection () {
         subtitle="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
       />
       <div className='grid grid-cols-2 gap-[40px]'>
-        {serviceCardsContent.map((card) => (
-          <Card key='card' variant={card.bg} className='max-w-[600px] min-h-[310px] flex justify-between'>
+        {serviceCardsContent.map((card, index) => (
+          <Card key={`service-card-${index}`} variant={card.bg} className='max-w-[600px] min-h-[310px] flex justify-between'>
             <div className='flex flex-col justify-between'>
-              <Title className='text-h3 text-black' variant={card.titleColor}>{card.title}</Title>
-              <LinkIcon arrow={card.arrowColor} bg={card.bgLink} />
+              <div className='max-w-[221px]'>
+                <Title className='text-h3 text-black ' variant={card.titleColor}>{card.title}</Title>
+              </div>
+              <Link arrow={card.arrowColor} bg={card.bgLink} />
             </div>
 
             <Image className='self-center' src={card.image} width='210' height='200' alt='абобик'/>

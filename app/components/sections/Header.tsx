@@ -4,7 +4,7 @@ import Button from "@/app/components/ui/Button";
 export default function Header() {
   return (
     <>
-      <div className='max-w-[1200px] m-auto w-full flex justify-between py-5 items-center text-[20px]'>
+      <div className='section-wrapper !mt-0 flex justify-between py-5 items-center text-[20px]'>
         <div>
           <p>
             <svg width="220" height="56" viewBox="0 0 220 56" fill="none" xmlns="http://www.w3.org/2000/svg">
