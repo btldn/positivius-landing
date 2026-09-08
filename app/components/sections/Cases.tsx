@@ -1,9 +1,11 @@
 import Card from "@/app/components/ui/Card";
 import Link from "@/app/components/ui/Link";
+import Heading from "@/app/components/blocks/Heading";
 
 export default function Cases() {
   return (
     <div className='section-wrapper'>
+      <Heading title='Case Studies' subtitle='Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies' />
       <Card className='!p-[60px] flex [&>*]:flex-1 [&>*]:min-w-0 [&>*]:px-[64px] [&>*:first-child]:pl-0 [&>*:last-child]:pr-0 [&>*+*]:border-l [&>*+*]:border-white' variant='black'>
         <div>
           <p className='text-p mb-[20px]'>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
