@@ -7,6 +7,7 @@ import Process from "@/app/components/sections/Process";
 import Team from "@/app/components/sections/Team";
 import Testimonials from "@/app/components/sections/Testimonials";
 import Contact from "@/app/components/sections/Contact";
+import Footer from "@/app/components/sections/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Team />
       <Testimonials />
       <Contact />
+      <Footer />
     </>
   );
 }
