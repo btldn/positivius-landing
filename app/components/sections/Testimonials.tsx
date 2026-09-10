@@ -4,7 +4,7 @@ import Heading from "@/app/components/blocks/Heading";
 import Card from "@/app/components/ui/Card";
 import Testimonial from "@/app/components/blocks/Testimonial";
 import { Swiper, SwiperSlide, type SwiperClass } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Mousewheel, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import {useState} from "react";
@@ -63,11 +63,17 @@ export default function Testimonials () {
           <Swiper
             onSwiper={(s) => { setSwiper(s); syncEdges(s); }}
             onSlideChange={syncEdges}
-            modules={[Navigation, Pagination]}
+            modules={[Mousewheel, Pagination]}
             spaceBetween={50}
             slidesPerView={1}
             slidesOffsetBefore={315}
             slidesOffsetAfter={315}
+            mousewheel={{
+              forceToAxis: true,
+              releaseOnEdges: true,
+              thresholdDelta: 30,
+              thresholdTime: 700,
+            }}
             pagination={{
               el: ".testimonials-dots",
               clickable: true,
