@@ -151,6 +151,7 @@ html {
   transition: transform .3s ease;
 }
 
-.link:hover::after {
+.link:hover::after,
+.group:hover .link::after {
   transform: scaleX(1);
 }
