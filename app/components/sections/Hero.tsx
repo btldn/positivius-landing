@@ -10,7 +10,7 @@ import zoomLogo from './images/zoom-logo.svg'
 
 export default function Hero () {
   return (
-    <div className="!mt-[70px] section-wrapper">
+    <section id="hero" className="!mt-[70px] section-wrapper">
       <div className="flex justify-between">
         <div className="flex flex-col gap-[35px] max-w-[530px]">
           <h1 className="text-h1">Navigating the digital landscape for success</h1>
@@ -27,7 +27,7 @@ export default function Hero () {
         <Image className="grayscale" src={netflixLogo} width={126} height={48} alt="Netflix logo" />
         <Image className="grayscale" src={zoomLogo} width={111} height={48} alt="Zoom logo" />
       </div>
-    </div>
+    </section>
   )
 
 }

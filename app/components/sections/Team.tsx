@@ -57,7 +57,7 @@ const members: Member[] = [
 
 export default function Team() {
   return (
-    <div className='section-wrapper'>
+    <section id="about" className='section-wrapper'>
       <Heading title='Team' subtitle='Meet the skilled and experienced team behind our successful digital marketing strategies'/>
       <div className='grid grid-cols-3 gap-[40px] mb-[40px]'>
         {members.map((member: Member) => (
@@ -68,6 +68,6 @@ export default function Team() {
         <Button variant='primary' className='px-[76px]'>See all team</Button>
       </div>
 
-    </div>
+    </section>
   )
 }

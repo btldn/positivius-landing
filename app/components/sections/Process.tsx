@@ -45,13 +45,13 @@ export default function Process () {
 
 
   return (
-    <div className='section-wrapper'>
+    <section id="process" className='section-wrapper'>
       <Heading title='Our Working Process ' subtitle='Step-by-Step Guide to Achieving Your Business Goals' />
       {workingProcessCards.map((card, index) => {
         return (
           <ProcessStep title={card.title} description={card.description} index={index} key={`processStep-${index}`} />
         )
       })}
-    </div>
+    </section>
   )
 }

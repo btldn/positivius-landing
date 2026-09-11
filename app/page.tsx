@@ -13,14 +13,16 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <Services />
-      <Proposal />
-      <Cases />
-      <Process />
-      <Team />
-      <Testimonials />
-      <Contact />
+      <main className="flex flex-col">
+        <Hero />
+        <Services />
+        <Proposal />
+        <Cases />
+        <Process />
+        <Team />
+        <Testimonials />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

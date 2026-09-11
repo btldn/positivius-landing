@@ -56,7 +56,7 @@ export default function Testimonials () {
   }
 
   return (
-    <div className='section-wrapper'>
+    <section id="testimonials" className='section-wrapper'>
       <Heading title="Testimonials" subtitle='Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services' />
       <Card variant='black' className='px-0'>
         <div className='overflow-hidden'>
@@ -105,6 +105,6 @@ export default function Testimonials () {
 
         </div>
       </Card>
-    </div>
+    </section>
   )
 }

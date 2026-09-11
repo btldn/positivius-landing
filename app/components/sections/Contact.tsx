@@ -26,7 +26,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="section-wrapper">
+    <section id="pricing" className="section-wrapper">
       <Heading title='Contact Us' subtitle='Connect with Us: Let&#39;s Discuss Your Digital Marketing Needs'/>
       <Card variant='gray'
             className="px-[100px] pt-[60px] pb-[80px] border-none shadow-none flex justify-between relative ">
@@ -67,6 +67,6 @@ export default function Contact() {
         </form>
         <Image className='absolute right-0' src={decor} alt=''/>
       </Card>
-    </div>
+    </section>
   )
 }

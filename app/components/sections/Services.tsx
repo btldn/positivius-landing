@@ -72,7 +72,7 @@ const serviceCardsContent: CardContent[] = [
 
 export default function Services () {
   return (
-    <div className='section-wrapper'>
+    <section id="services" className='section-wrapper'>
       <Heading
         title="Services"
         subtitle="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
@@ -93,7 +93,7 @@ export default function Services () {
 
       </div>
 
-    </div>
+    </section>
 
   )
 

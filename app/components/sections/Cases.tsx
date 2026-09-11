@@ -4,7 +4,7 @@ import Heading from "@/app/components/blocks/Heading";
 
 export default function Cases() {
   return (
-    <div className='section-wrapper'>
+    <section id="cases" className='section-wrapper'>
       <Heading title='Case Studies' subtitle='Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies' />
       <Card className='!p-[60px] flex [&>*]:flex-1 [&>*]:min-w-0 [&>*]:px-[64px] [&>*:first-child]:pl-0 [&>*:last-child]:pr-0 [&>*+*]:border-l [&>*+*]:border-white' variant='black'>
         <div>
@@ -20,6 +20,6 @@ export default function Cases() {
           <Link arrow='green'>Learn more</Link>
         </div>
       </Card>
-    </div>
+    </section>
   )
 }

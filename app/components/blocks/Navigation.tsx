@@ -1,6 +1,7 @@
 
 type NavProps = {
   className?: string
+  animation: boolean
 }
 
 const NAV_ITEMS = [
@@ -11,11 +12,11 @@ const NAV_ITEMS = [
   {href: '#blog', label: 'Blog'},
 ]
 
-export default function Navigation ({ className }: NavProps) {
+export default function Navigation ({ className, animation }: NavProps) {
   return (
     <div className={`flex justify-between gap-[40px] ${className}`}>
       {NAV_ITEMS.map((navItem) => (
-        <a key={navItem.href} href={navItem.href}>{navItem.label}</a>
+        <a className={animation && 'link'} key={navItem.href} href={navItem.href}>{navItem.label}</a>
       ))}
     </div>
   )
