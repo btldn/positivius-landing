@@ -19,7 +19,7 @@ type FormField = z.infer<typeof schema>
 export default function Footer() {
 
   const { register, handleSubmit, formState: {errors} } = useForm<FormField>({resolver: zodResolver(schema)})
-  const onSubmit: SubmitHandler<FormFields> = async (data) => {
+  const onSubmit: SubmitHandler<FormField> = async (data) => {
     await new Promise(resolve => setTimeout(resolve, 1000))
     console.log(data)
   }

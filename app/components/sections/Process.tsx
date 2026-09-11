@@ -1,8 +1,6 @@
 "use client"
 
 import Heading from "@/app/components/blocks/Heading";
-import Card from "@/app/components/ui/Card";
-import {useState} from "react";
 import ProcessStep from "@/app/components/blocks/ProcessStep";
 
 type CardContent = {

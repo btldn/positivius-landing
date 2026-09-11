@@ -1,5 +1,5 @@
 import Card from "@/app/components/ui/Card";
-import Image, {StaticImageData} from "next/image";
+import {StaticImageData} from "next/image";
 
 type MemberProps = {
   name: string;

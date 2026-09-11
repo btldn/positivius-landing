@@ -1,17 +1,9 @@
-import {ReactNode} from "react";
 import Title from "@/app/components/ui/Title";
 
 type HeadingProps = {
   title: string;
   subtitle: string;
 }
-
-const variantClasses = {
-  black: 'bg-(--color-primary) text-white',
-  white: 'bg-white',
-  green: 'bg-(--color-accent)'
-}
-
 
 export default function Heading({title, subtitle}: HeadingProps) {
   return (
