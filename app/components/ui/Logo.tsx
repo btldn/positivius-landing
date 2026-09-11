@@ -1,8 +1,6 @@
 import Image from "next/image"
 import logoBlack from './images/logo-black.svg'
 import logoWhite from './images/logo-white.svg'
-import {JSX} from "react";
-
 
 type LogoProps = {
   variant: "white" | "black"
