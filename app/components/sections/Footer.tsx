@@ -1,13 +1,32 @@
+"use client"
+
 import Card from "@/app/components/ui/Card";
 import Logo from "@/app/components/ui/Logo";
 import Navigation from "@/app/components/blocks/Navigation";
 import Title from "@/app/components/ui/Title";
 import Button from "@/app/components/ui/Button";
+import { useForm, SubmitHandler } from 'react-hook-form';
+import {z} from "zod"
+import {zodResolver} from "@hookform/resolvers/zod";
+
+const schema = z.object ({
+  email: z.string().email()
+})
+
+type FormField = z.infer<typeof schema>
 
 
 export default function Footer() {
+
+  const { register, handleSubmit, formState: {errors} } = useForm<FormField>({resolver: zodResolver(schema)})
+  const onSubmit: SubmitHandler<FormFields> = async (data) => {
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    console.log(data)
+  }
+
+
   return (
-    <div className='section-wrapper mt-[140px]'>
+    <footer className='section-wrapper mt-[140px]'>
       <Card variant='black' className='pt-[55px] px-[60px] pb-[50px] border-none outline-none rounded-b-none'>
         <div className='flex justify-between items-center gap-[40px] mb-[66px]'>
           <Logo variant='white' width={180}/>
@@ -54,13 +73,19 @@ export default function Footer() {
             </div>
           </div>
           <div className='py-[58px] px-[40px] bg-[#292A32] rounded-[14px]'>
-            <form action="" className='flex gap-[20px]'>
-              <input type="text" className='px-[35px] py-[22px] border-white border-1 rounded-[14px] placeholder:text-white' placeholder='Email'/>
+            <form action="" className='flex gap-[20px]' onSubmit={handleSubmit(onSubmit)}>
+              <input {...register('email')} type="text" className='px-[35px] py-[22px] border-white border-1 rounded-[14px] placeholder:text-white' placeholder='Email'/>
               <Button variant="tertiary" className='text-black'>Subscribe to news</Button>
             </form>
+            {errors.email && (<div className="text-red-500 mt-[20px]">{errors.email.message}</div>)}
           </div>
         </div>
+        <hr className='mb-[50px] mt-[50px]'/>
+        <div className='flex gap-[40px]'>
+          <p>© 2023 Positivus. All Rights Reserved.</p>
+          <p><a className='underline' href="#">Privacy Policy</a></p>
+        </div>
       </Card>
-    </div>
+    </footer>
   )
 }
